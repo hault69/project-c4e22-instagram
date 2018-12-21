@@ -28,9 +28,8 @@ def index():
         data['raw'] = raw
         data['soup'] = soup
         # video=link.get('content')
-
-        print(url)
         while image!='':
+            print(data['url'])
             return redirect(url_for('download'))
 
 @app.route('/download/',methods=['GET','POST'])

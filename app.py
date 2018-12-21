@@ -51,11 +51,10 @@ def download():
             name = name + ".mp4"
             links2= soup.find(property="og:image") 
             links= soup.find(property="og:video")
-            image=links2.get('content') # show imgae
+            image=links2.get('content') # show image
             image_save = links.get('content')
             urllib.request.urlretrieve(image_save, name)  
         
-        # return in the browser
         while image!='':
             return '<img src="'+image+'"'+ 'align="center">' # view item
 

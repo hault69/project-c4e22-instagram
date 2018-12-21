@@ -20,7 +20,17 @@ html,body,section{
 .input{
     text-align: center;
 }
-input{
+.input input{
+    font-size: 1.2rem;
+    width: 600px;
+    padding: 10px 10px 10px 30px;
+    border: #2fb765 solid 2px;
+    border-radius: 5px;
+    margin: 10px 5px 10px 5px;
+    -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56));
+}
+/* input{
     font-size: 1.2rem;
     width: 600px;
     padding: 10px 10px 10px 30px;
@@ -29,12 +39,14 @@ input{
     margin: 10px 5px 10px 5px;
     /* -webkit-filter: drop-shadow(1px 1px 5px gray); Safari */
     /* filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
-}
+/* } */
 input:focus{
     outline:0;
 }
 .getlink{
     text-align: center;
+    -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56));
 }
 button{
     font-size: 1.5rem;

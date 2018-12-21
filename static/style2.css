@@ -4,7 +4,6 @@ a{text-decoration: none;}
 html,body,section{
     width: 100%;
     height: 100%;
-    /* border: #20884a solid 1px; */
 }
 .namewebsite{
     text-align: center;
@@ -21,15 +20,23 @@ html,body,section{
 .input{
     text-align: center;
 }
-input{
-    /* font-size: 1.1rem; */
+.input input{
     width: 400px;
     padding: 10px 10px 10px 30px;
     border: #2fb765 solid 2px;
     border-radius: 5px;
     margin: 5px 0px 5px 0px;
-    /* -webkit-filter: drop-shadow(1px 1px 5px gray); Safari */
-    /* filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
+    -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56));
+}
+.format input{
+    width: 400px;
+    padding: 10px 10px 10px 30px;
+    border: #2fb765 solid 2px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    /* -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
 }
 input:focus{
     outline:0;
@@ -43,14 +50,12 @@ button{
     border-radius: 30px;
     background: #2fb765;
     border: #2fb765 solid 8px;
-    /* -webkit-filter: drop-shadow(1px 1px 5px gray); Safari */
-    /* filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
+    -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56));
     color: white;
-    /* margin: 10px 10px 10px 10px; */
 }
 button:hover{
     background-color: #20884a;
-    border: 8px solid #20884a;
     cursor: pointer;
 }
 button:focus{
@@ -58,7 +63,6 @@ button:focus{
 }
 .infor{
     text-align: center;
-    /* height: 100px; */
     display: flex;
     align-items: center;
     padding-top: 50px;
@@ -91,46 +95,19 @@ button:focus{
     margin-right: 40px;
     text-align: center;
 }
-/* .choice{
-    /* width: 50px; */
-    /* border: #2fb765 solid 2px; */
-    /* margin-top: 60px;
-    margin-left: 50px; */
-}
-/* .choice p{
-    border: #2fb765 solid 2px;
-    width: 100px;
-    margin: auto;
-    padding-left: 11px;
-    border-radius: 2px; */
-}
-#taive{
+/* #taive{
     font-size: 1.0rem;
     border-radius: 2px;
     background: #2fb765;
     border: #2fb765 solid 2px;
     /* -webkit-filter: drop-shadow(1px 1px 5px gray); Safari */
     /* filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
-    color: white;
-}
-#taive:hover{
+    /* color: white; */
+/* */ 
+/* #taive:hover{
     background-color: #20884a;
     border: 2px solid #20884a;
     cursor: pointer;
-}
-/* #type{
-    border: #2fb765 solid 2px;
-    width: 100px;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    border-radius: 4px;
-    
-} */
-/* #choice{
-    display: flex;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
 } */
 .format h6{
     border: #2fb765 solid 2px;
@@ -139,6 +116,8 @@ button:focus{
     font-size: 1.1rem;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
+    /* -webkit-filter: drop-shadow(1px 1px 5px gray);
+    filter: drop-shadow(1px 1px 5px rgb(56, 56, 56)); */
 }
 .format{
     width: 400px;

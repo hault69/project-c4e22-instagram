@@ -46,14 +46,14 @@ def download():
             name = name + ".jpg"
             links= soup.find(property="og:image") 
             image=links.get('content') # get link
-            urllib.request.urlretrieve(image, name)  # save
+            urllib.request.urlretrieve(image, 'C:/Users/hau69/Desktop/TechKids/project_c4e22/'+name)  # save
         if filename == "mp4":
             name = name + ".mp4"
-            links2= soup.find(property="og:image") 
+            links2= soup.find(property="og:image")
             links= soup.find(property="og:video")
             image=links2.get('content') # show imgae
             image_save = links.get('content')
-            urllib.request.urlretrieve(image_save, name)  
+            urllib.request.urlretrieve(image_save, 'C:/Users/hau69/Desktop/TechKids/project_c4e22/'+name)  
         # return in the browser
         while image!='':
             return redirect("/")

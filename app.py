@@ -12,7 +12,7 @@ data = {
 }
 
 
-@app.route('/',methods=['GET','POST'])
+@app.route("/",methods=['GET','POST'])
 def index():
     if request.method == 'GET':
 	    return render_template('index.html')
@@ -32,7 +32,7 @@ def index():
             print(data['url'])
             return redirect(url_for('download'))
 
-@app.route('/download/',methods=['GET','POST'])
+@app.route("/download",methods=['GET','POST'])
 def download():
     if request.method=='GET':
         return render_template('download.html', url = data['url'])
@@ -51,12 +51,13 @@ def download():
             name = name + ".mp4"
             links2= soup.find(property="og:image") 
             links= soup.find(property="og:video")
-            image=links2.get('content') # show image
+            image=links2.get('content') # show imgae
             image_save = links.get('content')
             urllib.request.urlretrieve(image_save, name)  
-        
+        # return in the browser
         while image!='':
-            return '<img src="'+image+'"'+ 'align="center">' # view item
+            return redirect("/")
+            # return '<img src="'+image+'"'+ 'align="center">' # view item
 
 if __name__=='__main__':
 	app.run()
